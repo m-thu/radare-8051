@@ -767,7 +767,7 @@ static int disassemble (RAsm *a, RAsmOp *op, const ut8 *buf, int len) {
 
 		/* djnz data addr., code addr. */
 		if (l == 0x5) {
-			pc += 2;
+			pc += 3;
 			dest = pc + (int8_t)buf[2];
 			decode_sfr(buf[1], sfr);
 			snprintf(op->buf_asm, R_ASM_BUFSIZE, "djnz %s, 0x%x",
