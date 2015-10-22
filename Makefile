@@ -19,3 +19,5 @@ install:
 
 uninstall:
 	rm -f $(R2_PLUGIN_PATH)/$(NAME).$(SO_EXT)
+
+.PHONY: all clean install uninstall
